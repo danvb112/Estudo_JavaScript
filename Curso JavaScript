@@ -1,0 +1,79 @@
+Curso JavaScript
+
+- No JavaScrip as Variavéis sempre iniciam com "var" e não são do tipo de tipagem estática e sim dinâmica, ou seja, não é preciso declarar o tipo da varável.
+
+Exemplos de funções:
+
+var nome = 'Daniel';
+var idade = 21;            
+var peso = 68.2;
+var alunos = ['Daniel', 'Diego', 'Sandino']
+var aluno = {    
+    nome: 'Daniel',
+    idade: 21,
+    peso: 68.2
+ };
+
+
+- Também podem ser realizadas qualquer tipo de operação matemática no JavaScript e também podem ser criadas funções cujo o scopo é escrito dentro de duas chaves após serem definidos os parâmetro que irá ser recebido pela função
+
+Exemplo de criação de função:
+
+
+function soma (numero1, numero2){
+    var resultado = numero1 + numero2;
+
+    return resultado;
+
+ }
+
+var resultado = soma(1,2)
+console.log(resultado)
+
+- As condicionais 'if', 'else' e 'else if' são utilizadas com uma sintaxe do tipo:
+if(condição){
+    retorno do que deve ser feito, sempre terminando com ';'
+}
+
+Ex uso das condicionais:
+
+
+function retornaSexo(sexo){
+
+    if (sexo === "M"){
+         return 'Masculino';
+    } else if (sexo === "F"){
+         return 'Feminino';
+    } else {
+         return "Outro"
+      }
+  }
+
+var resultado = retornaSexo('dadad')
+
+console.log(resultado)
+
+
+- Outra opção que existe caso se esteja fazendo muitos ifs ou verificação de valores em cima de uma mesma variável é utilizar o switch case que deixa o código mais simples para esse tipo de situação.
+
+Ex:. Utilização do switch case:
+
+
+function retornaSexo(sexo){
+
+    switch(sexo) {
+         case 'M':
+             return 'Masculino';
+         case 'F':
+             return 'Feminino';
+         default:
+             return 'Outro';
+    }
+
+ }
+
+var resultado = retornaSexo('F')
+console.log(resultado)
+
+- 
+
