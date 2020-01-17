@@ -75,5 +75,78 @@ function retornaSexo(sexo){
 var resultado = retornaSexo('F')
 console.log(resultado)
 
+- Os operadores lógicos no JavaScript são feitos da seguinte forma AND(&&), OR(||) e o NOT (!=), lembrando que três iguais (===) representa não só a comparação dos valores em sim mas também se o tipo da variável é igual.
+
+- Uma boa pratica é armazenar os valores das condições em variáveis, por exemplo, em vez de utilizar esse código:
+
+var sexo = 'M'
+var msculino;
+
+if (sexo === 'M'){
+    masculino = true;
+} else{
+    masculino = false;
+}  
+
+- Poderiamos simplesmente já colocar essa condição na criação da variável "masculino" que daria o mesmo resultado, como:
+
+var sexo = 'M'
+
+var masculino = sexo === 'M';
+
+- uma condição ternária acontece quando temos um if seguido de um else, logo, somente duas verificações de condições, neste caso pode-se reduzir bastante o código criando-se uma única variável que vai no inicio conter a condição, logo apos uma '?' que representa o 'if' seguido do que deve ser feito caso o if seja verdadeiro, logo depois um ':' que representa o 'else' seguido do que deve ser feito caso o else seja verdadeiro.
+
+Ex:. uso de condição ternária
+
+(Código sem condição ternária)
+var sexo = 'M'
+
+if (sexo === 'M'){
+    return 'Masculino';
+} else{
+    return 'Feminino';
+}
+
+(Código com condição ternária)
+
+var sexo = 'M'
+
+var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+
+- As estruturas de repetição no JavaScript são for e while, o for geralmente usado quando se sabe qual o intervalo de repetição e o while quando não se tem controle de quantas repetições irão ocorrer.
+
+Ex:. for no JavaScript
+
+for (var i=0; i <= 100; i++){
+    console.log(i);
+}
+
+Ex:. while no JavaScript
+
+var j = 0;
+
+while (j<50){
+    console.log(j);
+
+    j++
+}
+
+- O intervalo dentro do JavaScrip é uma função que executa varias vezes dentro do intervalo definido, tendo como comandos o 'setInterval' e o 'setTimeout' a diferença entre os dois é que o setInterval irá executar a função passada como parâmetro varias vezes dentro do tempo determinado em milisegundos e o setTimeout executa a função somente uma vez mas com um delay de tempo também estabelecido como parâmetro;
+
+Ex:. uso do setInterval e setTimeout
+
+function exibeAlgo(){
+    console.log('Hello World')
+}
+
+setInterval(exibeAlgo, 1000);
+setTimeout(exibeAlgo, 2000);
+
 - 
+
+
+
+
+
+
 
