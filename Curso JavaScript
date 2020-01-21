@@ -142,7 +142,29 @@ function exibeAlgo(){
 setInterval(exibeAlgo, 1000);
 setTimeout(exibeAlgo, 2000);
 
-- 
+- A DOM é basicamente a árvore de elementos dispostos em tela dentro do html, tudo que é criado dentro do html como botões, inputs e etc fazem parte da DOM. O javascript pode manipular a DOM de diversas formas seja quando um botão é clicado ou o mouse é passado por cima de algun elemento e assim por diante.
+
+- É possível mostrar uma mensagem de alerta assim que um botão for clicado por meio da função global 'alert' do javascript e colocando antes de fechar a tag do button do hmtl um 'onclick' por exemplo.
+
+- é possível referenciar elementos da DOM através do JavaScript e não simpilsmente disparar eventos do html para o Javascript, ou seja, como conseguimos buscar uma informação da nossa arvore de elementos do html pelo proprio JavaScript.
+
+- É possivel fazer a referência criando-se uma variável que irá armazenar essa referência. Para fazer a referência usa-se o comando 'document' que é uma variável global que referencia a DOM seguido de '.' e a instrução que irá especificar a busca do elemento que você deseja na DOM, sendo eles: 'getElementById()'que busca um elemento baseado no id dele; 'getElementsByTagName()' essa forma busca o elemento pela tag que ele está usando, como não tem como garantir que será um valor único, essa forma sempre retorna um vetor(lista), como é uma lista é possível especificar a posição da tag que voçê deseja retornar; 'getElementsByClassName()' irá fazer a busca com base no nome da classe e assim como na forma de buscar por tags, essa forma também retorna um vetor/lista pelo fato de uma classe não ser única ao contrario do id.
+
+- Todas as formas acima podem ser descartadas se for usado uma única forma chamada de 'querrySelector()' que básicamente deixa você andar/percorrer a DOM até encontrar o elemento podendo especificar onde se encontra o elemento que você deseja;
+
+Ex:. uso do querry Selector
+
+* var inputElement = document.querrySelector('body div#app input')
+
+- Dessa forma estamos buscando um input que está dentro de uma div com id 'app' que está dentro do body. Ocódigo pode ser simplificado sem o uso do body uma vez que o body sempre vai existir.
+
+- as formas de busca usando o querrySelector podem ser especificadas de diversas formas como por exemplo pelo nome dado a tag
+
+Ex:. uso do querry selector pelo nome dado a tag
+
+* var inoutElement = document.querrySelector(input[name=nome])
+
+- Agora é possível fazer toda a manipulação da DOM por meio do propŕio JavaScript sem pra isso ter que sujar o código HTML 
 
 
 
