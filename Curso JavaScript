@@ -156,15 +156,17 @@ Ex:. uso do querry Selector
 
 * var inputElement = document.querrySelector('body div#app input')
 
-- Dessa forma estamos buscando um input que está dentro de uma div com id 'app' que está dentro do body. Ocódigo pode ser simplificado sem o uso do body uma vez que o body sempre vai existir.
+- Dessa forma estamos buscando um input que está dentro de uma div com id 'app' que está dentro do body. O código pode ser simplificado sem o uso do body uma vez que o body sempre vai existir.
 
-- as formas de busca usando o querrySelector podem ser especificadas de diversas formas como por exemplo pelo nome dado a tag
+- as formas de busca usando o querrySelector podem ser especificadas de diversas formas como por exemplo pelo nome dado a tag e o querrySelector sempre vai retornar um único elemento, se quisermos retornar todos devemos utilizar o querrySelectorAll
 
 Ex:. uso do querry selector pelo nome dado a tag
 
 * var inoutElement = document.querrySelector(input[name=nome])
 
-- Agora é possível fazer toda a manipulação da DOM por meio do propŕio JavaScript sem pra isso ter que sujar o código HTML 
+- Agora é possível fazer toda a manipulação da DOM por meio do propŕio JavaScript sem pra isso ter que sujar o código HTML.
+
+- 
 
 
 
