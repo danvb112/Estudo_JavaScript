@@ -158,7 +158,7 @@ Ex:. uso do querry Selector
 
 - Dessa forma estamos buscando um input que está dentro de uma div com id 'app' que está dentro do body. O código pode ser simplificado sem o uso do body uma vez que o body sempre vai existir.
 
-- as formas de busca usando o querrySelector podem ser especificadas de diversas formas como por exemplo pelo nome dado a tag e o querrySelector sempre vai retornar um único elemento, se quisermos retornar todos devemos utilizar o querrySelectorAll
+- as formas de busca usando o querrySelector podem ser especificadas de diversas formas como por exemplo pelo nome dado a tag e o querrySelector sempre vai retornar um único elemento, se quisermos retornar todos devemos utilizar o querrySelectorAll.
 
 Ex:. uso do querry selector pelo nome dado a tag
 
@@ -166,7 +166,17 @@ Ex:. uso do querry selector pelo nome dado a tag
 
 - Agora é possível fazer toda a manipulação da DOM por meio do propŕio JavaScript sem pra isso ter que sujar o código HTML.
 
-- 
+- É possivel também criar novos elementos através do JavaScript criando uma variável e utilizando a função 'document.createElement()' e passando como parâmetro a tag que você deseja criar. Depois pode-se utilizar o método 'variável.serAttribute()' passando o  nome atributo que você deseja atribuir ao elemento criado.
+
+- é possivel criar um elemento de texto usando a propriedade 'document.createTextNode()' passando como parâmetro o texto que você deseja criar.
+
+- Elementos podem ser adicionados a outros como filhos, para isso usa-se a propriedade 'variável.appendChild()'. Além disso também é possível remover elementos pela prorpiedade 'variável.removeChild()'
+
+- É possível alterar o estilo CSS do elemento por meio do javaScript referenciando o elemento e utilizando o '.style' em seguida a propriedade CSS que deseja modificar.
+
+
+
+
 
 
 

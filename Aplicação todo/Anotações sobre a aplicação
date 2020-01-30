@@ -1,0 +1,14 @@
+- é interessante que você observe todos os elementos que você irá precisar manipular e já fazer uma referência deles dentro do código javaScript
+
+- Como a aplicação vai ser responsável por ter que renderizar as mudanças existentes na lista, é interessante que referenciar a lista no código javaScript por meio de uma lista ou dicionário
+
+- Foi criada uma função para rendereizar os todos (renderTodo) que percorria a lista com os todos, criava um elemento 'li' com o proprio texto vindo da lista e adicionava esse elemento no html
+
+- Foi criada uma função para adicionar um todo, essa função recupera o valor do input e adiciona na lista por meio da propriedade 'Push()' em seguida apaga o texto escrito o input e chama a função renderTodo. Mas dessa forma ao adicionar um elemento a lista iria se renderizar inteira novamente, para evitar que isso acontecesse, logo no início da função foi usado o comando 'listElement.innerHTML = '';' que fez com que todo o código html referenciado na variável fosse apagado para que a função o reescrevesse novamente. Poŕem a função addTodo só pode ser chamada com o clicar do botão, então o seguinte código resolveu o problema:
+'buttonElement.onclick = addTodo;'.
+
+- Foi criada uma função para deletar o todo, apagando o elemento da lista conforme o botão fosse clicado, para isso usou-se a propriedade 'splice()' que como parâmetro recebe o índice e a quantidade de itens a serem deletados da lista naquela posição. Para saber qual era a posição do item clicado foi utilizado a propriedade 'indexOf' que pegou a string vinda do for e retornou seu índice. 
+
+- 
+
+
