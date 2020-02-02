@@ -174,7 +174,18 @@ Ex:. uso do querry selector pelo nome dado a tag
 
 - É possível alterar o estilo CSS do elemento por meio do javaScript referenciando o elemento e utilizando o '.style' em seguida a propriedade CSS que deseja modificar.
 
+- É possível salvar os dados em um armazenamento local sem pra isso utilizar um banco de dados para isso podemos usar uma variavel global chamada 'localStorage' e a função setItem passando o nome que queremos dar ao armazenament e a variável que queremos salvar. Porém o localStorage só pode armazenar strings e não listas/objetos sendo necessário convertelos para um formato JSON (JavaScript Object Notation) que tem uma estrutura parecida com a de um objeto mas é uma string.
 
+- O JSON é uma variável global do JavaScript possuindo funções que podem ser utilizadas, uma delas é a 'stringfy' que converte listas/objetos em strings. Outra função é a 'parse' que transforma de volta a string do JSON em uma lista/objeto
+
+EX:. localStorage.setItem('list_todos', JSON.stringfy(todos));
+
+- Uma boa prática no JavaScript é caso você esteja tentando retornar uma lista com JSON sempre colocar uma condicional 'ou (||)' e colocar uma lista vazia ([]) para caso não exista como ser retornado uma lista pelo JSON automaticamente seja retornado uma lista vazia, evitando assim um possível erro.
+
+- O AJAX é uma requisição assincrona que a gente realiza em algum backend, então é possível requisitar informações do servidor sem precisar recarregar a página. Para começar uma requisição AJAX a gente começa definindo uma variável como 
+'new XMLHttpRequest()' que é uma classe do JavaScript que nos permite usar as funcionalidades do AJAX para recuperarmos alguma informação do servidor.
+
+- Para realizar uma requisição usa-se o 'open' na variável passando como parâmetro o método que será feita a requisição e o endereço.
 
 
 
