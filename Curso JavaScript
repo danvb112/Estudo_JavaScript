@@ -187,6 +187,16 @@ EX:. localStorage.setItem('list_todos', JSON.stringfy(todos));
 
 - Para realizar uma requisição usa-se o 'open' na variável passando como parâmetro o método que será feita a requisição e o endereço.
 
+- As Promises são códigos que não vão influenciar n linha do tempo do código JavaScript, logo são funções que vão devolver o resultado seja de sucesso ou erro só depois de um tempo sem que a gente se preocupe quando esse valor vai ser retornado porque o código JavaScript vai continuar sendo executado normalmente.
+
+- Na promise serão passados dois parâmetros, o resolve e o reject. O resolve será utlizado dentro da promise quando o resultado obtido for de sucesso e o reject vai ser retornado quando o resultado não for de sucesso.
+
+- Quando a função onde está a promise for chamada serão utilizados dois atributos para auxiliar sendo eles o '.then(function(response) {})' que será invocado quando a resposta da requisição seja um sucesso(resolve) e o '.catch(function(error) {})' que  será invocado quando a resposta da requisição não seja um sucesso(reject). 
+
+- Então a promise basicamente é uma classe que vai deixar a gente trabalhar com a estrutura do '.then' e '.catch' para a gente trabalhar com código assincrono dentro do JavaScript. Então se a gente tem algum código que depende od resultado de uma requisição dentro do JavaScript o melhor lugar para ele ficar é dentro do '.then' da promise.
+
+- A bibilioteca Axios é usada pra fazer as requisições AJAX feitas até agora. O Axios nada mais é do que um encapsulamento do XMLHttpRequest, então por de baixo dos panos a requisição que está sendo feita nada mais é do que uma XMLHttpequest, com isso o Axios vai nos ajudar a retornar os valores de forma mais fácil já retornando até mesmo automaticamente o response do JSON.
+
 
 
 
